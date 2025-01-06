@@ -1,0 +1,17 @@
+curl 'https://www.baidu.com/home/feed/feedwater?id=2&offset=1&sessionId=&crids=&req_type=1&bsToken=5fb8ed035a9a6d55ebf59b2285d1c838&pos=&newsNum=&needAd=1&refresh_state=-1&ismain=1&indextype=manht&_req_seqid=0x89f22f73000e277b&asyn=1&t=1736164428690&sid=61027_60853_61491_61496_61520_61535_61618_61613_61681' \
+  -H 'Accept: text/plain, */*; q=0.01' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Cookie: BD_UPN=12314753; BAIDUID=91A0C871BDC4ACF47BE848FA6970D19C:FG=1; BDUSS=I1flhicE1ZYmtiYlh1VjNpbG85VzhYLWNFWFlmMXdEfm0yMlpxc3MxaS1-R05uRVFBQUFBJCQAAAAAAAAAAAEAAAC6ynlCus2wqrXEQXpoYW8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL5vPGe-bzxndm; BDUSS_BFESS=I1flhicE1ZYmtiYlh1VjNpbG85VzhYLWNFWFlmMXdEfm0yMlpxc3MxaS1-R05uRVFBQUFBJCQAAAAAAAAAAAEAAAC6ynlCus2wqrXEQXpoYW8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL5vPGe-bzxndm; H_WISE_SIDS=61027_61098_61141_61107_61176_61207_61211_61213_61209_61231_61240_61286; BIDUPSID=91A0C871BDC4ACF47BE848FA6970D19C; PSTM=1734419218; H_WISE_SIDS_BFESS=61027_61098_61141_61107_61176_61207_61211_61213_61209_61231_61240_61286; BAIDUID_BFESS=91A0C871BDC4ACF47BE848FA6970D19C:FG=1; ZFY=:BRuRRxz5TuCALqsG:BzyiMPG4:B6zbhvMYVbck3:Bhdc2s:C; MCITY=-131%3A; BDRCVFR[feWj1Vr5u3D]=I67x6TjHwwYf0; delPer=0; BD_CK_SAM=1; PSINO=1; B64_BOT=1; H_PS_PSSID=61027_60853_61491_61496_61520_61535_61618_61613_61681; BA_HECTOR=2l05a5842g8g058h852001alb2e1cv1jnnh241v' \
+  -H 'Pragma: no-cache' \
+  -H 'Ps-Dataurlconfigqid: 0x89f22f73000e277b' \
+  -H 'Referer: https://www.baidu.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"'
