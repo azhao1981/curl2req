@@ -2,6 +2,14 @@
 
 bash curl transfer to requests 
 
+
+## 上传
+```bash
+pip install build
+python -m build
+twine upload dist/*
+```
+
 **1. 项目初始化和结构**
 
 ```

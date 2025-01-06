@@ -13,4 +13,3 @@ def test_curl_to_req():
 
 if __name__ == "__main__":
     test_curl_to_req()
-
