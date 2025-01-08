@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 import json
+import re
+from typing import Union, List, Optional
 
 
 def generate_json_paths(data, current_path="$", paths=None):
+    """Recursively generate JSON paths for a given data structure."""
     if paths is None:
         paths = []
 
@@ -20,7 +23,23 @@ def generate_json_paths(data, current_path="$", paths=None):
     return paths
 
 
+def uniq_json_paths(paths: List[str]) -> List[str]:
+    """Deduplicate array paths by replacing indices with []."""
+    seen = set()
+    unique_paths = []
+
+    for path in paths:
+        # Replace array indices with []
+        deduped_path = re.sub(r'\[\d+\]', '[]', path)
+        if deduped_path not in seen:
+            seen.add(deduped_path)
+            unique_paths.append(deduped_path)
+
+    return unique_paths
+
+
 def parse_json_and_get_first_path(json_content):
+    """Parse JSON content and generate paths."""
     try:
         if isinstance(json_content, str):
             data = json.loads(json_content)
@@ -37,9 +56,18 @@ def parse_json_and_get_first_path(json_content):
         return "Invalid JSON content"
 
 
-def get_json_paths(json_content, show=True):
+def get_json_paths(json_content: Union[str, dict], show: bool = True, uniq_path: bool = True) -> Optional[List[str]]:
+    """Get JSON paths with optional deduplication and display."""
     paths = parse_json_and_get_first_path(json_content)
+
+    if paths is None:
+        return None
+
+    if uniq_path:
+        paths = uniq_json_paths(paths)
+
     if show:
         for path in paths:
             print(path)
+
     return paths

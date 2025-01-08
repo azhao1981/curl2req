@@ -6,8 +6,10 @@ bash curl transfer to requests
 ## 上传
 ```bash
 pip install build
-python -m build
+rm -rf dist/* && python -m build
 twine upload dist/*
+
+pip install -e .
 ```
 
 **1. 项目初始化和结构**
