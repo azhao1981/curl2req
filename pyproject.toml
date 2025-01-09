@@ -4,7 +4,7 @@
 
    [project]
    name = "curl2req"
-   version = "0.1.6"
+   version = "0.1.7"
    description = "bash curl transfer to requests"
    readme = "README.md"
    requires-python = ">=3.7"
