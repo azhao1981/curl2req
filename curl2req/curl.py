@@ -24,7 +24,7 @@ def save_txt(items, file):
         for event in items:
             for key, value in event.items():
                 f.write(f"{key}: {value}\n")
-            f.write('\n' + '-'*50 + '\n\n')
+            f.write('\n' + '-' * 50 + '\n\n')
 
 
 def mkdirp(path):

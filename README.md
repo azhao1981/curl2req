@@ -1,12 +1,13 @@
 # curl2req
 
-把浏览器请求转换为 requests 请求的工具
+把浏览器请求转换为 `requests` 请求的工具
 
 ## 用法
 
-1 打开浏览器F12，右键 Copy -> Copy as cURL (bash)
-2 把请求保存到文件，例如 `.curl`
-3 运行命令
+1. 打开浏览器 `F12`，右键 `Copy -> Copy as cURL (bash)`
+2. 把请求保存到文件，例如 `.curl`
+3. 运行命令
+
 ```python
 from curl2req import curl_to_req
 
@@ -25,7 +26,7 @@ for k in keys:
     print(k, json_get_data(host, k2)[0])
 ```
 
-## 上传
+## 发布
 
 ```bash
 pip install build
